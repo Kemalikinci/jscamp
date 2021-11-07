@@ -34,20 +34,22 @@ console.log("---------------------Ödev-3---------------------")
     for (let i = 1; i < 1000; i++) {
       let gercek=0
       for (let j = 1; j < i; j++) {if(i%j==0){gercek+=j}}
-      if(gercek==i){console.log("Mükemmel sayıdır."+i)}
+      if(gercek==i){console.log(i+" Mükemmel sayıdır.")}
     }
   }
   perfectNumbers()
 }
 console.log("---------------------Ödev-4---------------------")
 {
-  function primeNumbers() {
+  function primeNumbers() 
+  {
+    console.log("1-1000 Arası asal sayılar:")
     let count=0
-    for (let i = 2; i < 1000; i++) {
-      for (let j = 1; j < i; j++) {if(i%j==0){count++}}
-      if (count==2) {console.log(i +" Asal sayıdır.") 
-      count=0}
-      else{count==0}
+    for (let i = 2; i < 1000; i++) 
+    {
+      for (let j = 1; j <= i; j++) {if(i%j==0 ){count++}}
+      if(count==2){console.log(i);count=0}
+      else{count=0}
     }
   }
   primeNumbers()
